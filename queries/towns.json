@@ -1,0 +1,45 @@
+{
+    "Santa Cruz de Tenerife": [
+        "Adeje", "Guía de Isora", "La Orotava", "San Cristóbal de La Laguna", "Santa Úrsula", 
+        "Arona", "Güímar", "Puerto de la Cruz", "San Miguel de Abona", "Santiago del Teide",
+        "Candelaria", "Icod de los Vinos", "Los Realejos", "Santa Cruz de la Palma", "Tacoronte",
+        "Granadilla de Abona", "Los Llanos de Ariadne", "El Rosario", "Tegeste"
+    ],
+    "Las Palmas": [
+        "Agüimes", "Ingenio", "Santa Brígida", "Telde",
+        "Arrecife", "Mogán", "Puero del Rosario", "Santa Lucía de Tirajana", "Tías",
+        "Arucas", "La Oliva", "San Bartolomé", "Santa María de Guía de Gran Canaria", "Tuineje",
+        "Gáldar", "Pájara, "San Bartolomé de Tirajana", "Teguise", "Yaiza"
+    ],
+    "Baleares": [
+        "Alcúdia", "Ibiza", "Llucmajor", "Santa Margalida", "Calviá", "Felanitx", "Manacor", "Sa Pobla",
+        "Sant Antoni de Portmany", "Capdepera", "Formentera", "Mahón", "Pollença", 
+        "Sant Josep de sa Talaia", "Ciutadella de Menorca", "Inca", "Marratxí", "Santa Eularia des Riu", "Sóller"
+    ],
+    "Murcia": [
+        "Águilas", "Caravaca de la Cruz", "Lorca" "Las Torres de Cotillas", "Alcantarilla", "Cartagena",
+        "Mazarrón", "San Javier", "Totana", "Alhama de Murcia", "Cieza", "Molina de Segura",
+        "San Pedro del Pinatar", "La Unión", "Archena", "Jumilla", "Mula", "Torre-Pacheco", "Yecla"
+    ],
+    "Asturias": [
+        "Aller", "Castrillón", "Grado", "Llanera", "San Martín del Rey Aureilo", "Avilés", "Corvera de Asturias",
+        "Langreo", "Llanes", "Siero", "Cangas del Narcea", "Gijón", "Laviana", "Mieres", "Valdés", "Carreño",
+        "Gozón", "Lena", "Oviedo", "Villaviciosa"
+    ],
+    "Madrid": [
+        "Alcorcón", "Alcalá de Henares", "Arganda del Rey", "Getafe", "Móstoles", "Las Rozas de Madrid", 
+        "Alcobendas", "Collado Villalba", "Leganés", "Parla", "San Sebastián de los Reyes", "Coslada",
+        "Pozuelo de Alarcón", "Torrejón de Ardoz", "Aranjuez", "Fuenlabrada", "Majadahonda",
+        "Rivas-Vaciamadrid", "Valdemoro"
+    ],
+    "Navarra": [
+        "Alsasua", "Baztan", "Cintruénigo", "Noáin", "Tudela", "Ansoáin", "Berrioplano", "Corella",
+        "Pamplona", "Valle de Egüés", "Aranguren", "Berriozar", "Estella", "San Adrián", "Villava",
+        "Barañáin", "Burlada", "Huarte", "Tafalla", "Zizur Mayor"
+    ],
+    "La Rioja": [
+        "Albelda de Iregua", "Arnedo", "Cervera del Río Alhama", "Lardero", "Pradejón", "Alberite", "Autol",
+        "Ezcaray", "Logroño", "Rincón de Soto", "Aldeanueva de Ebro", "Calahorra", "Fuenmayor", "Nájera",
+        "Santo Domingo de la Calzada", "Alfaro", "Cenicero", "Haro", "Navarrete", "Villamediana de Iregua"
+    ],
+}
