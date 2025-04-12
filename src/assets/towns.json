@@ -42,6 +42,18 @@
         "Ezcaray", "Logroño", "Rincón de Soto", "Aldeanueva de Ebro", "Calahorra", "Fuenmayor", "Nájera",
         "Santo Domingo de la Calzada", "Alfaro", "Cenicero", "Haro", "Navarrete", "Villamediana de Iregua"
     ],
+    "Cáceres": [
+        "Alcuéscar", "Coria", "Losar de la Vera", "Montehermoso", "Talayuela", "Arroyo de la Luz", "Hervás", 
+        "Malpartida de Cáceres", "Moraleja", "Torrejoncillo", "Jaraíz de la Vera", "Malpartida de Plasencia",
+        "Navalmoral de la Mata", "Trujillo", "Casar de Cáceres", "Jarandilla de la Vera", "Miajadas",
+        "Plasencia", "Valencia de Alcántara"
+    ],
+    "Badajoz": [
+        "Aceuchal", "Calamonte", "Guareña", "Montijo", "San Vicente de Alcántara", "Almendralejo", "Castuera",
+        "Jerez de los Caballeros", "Olivenza", "Villafranca de los Barros", "Azuaga", "Don Benito", "Llerena",
+        "Puebla de la Calzada", "Villanueva de la Serena", "Fuente del Maestre", "Mérida",
+        "Los Santos de Maimona", "Zafra"
+    ],
     "Cantabria": [
         "El Astillero", "Castro-Urdiales", "Marina de Cudeyo", "Reinosa", "Santander", "Cabezón de la Sal", 
         "Colindres", "Medio Cudeyo", "Reocín", "Santoña", "Camargo", "Los Corrales de Buelna",
