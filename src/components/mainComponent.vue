@@ -1,8 +1,25 @@
 <script setup>
 import { ref } from 'vue'
+import _ from 'underscore';
 
+const NO_OF_ROWS = 5
 const count = ref(0)
 
+import allData from '../assets/towns.json'
+
+var keys = Object.keys (allData)
+
+var quizzData = {}
+_.sample(keys, NO_OF_ROWS).forEach ((key, i) => {
+    var resp = _.sample (allData[key])
+    console.log (key + " " + resp)
+    quizzData[key] = resp
+})
+
+
+defineExpose({
+    quizzData
+})
 </script>
 
 <template>
@@ -20,6 +37,11 @@ const count = ref(0)
     </tbody>
   </table>
   <button class="down" @click="count++">You clickedme {{ count }} times.</button>
+
+  <p v-for="(key) in Object.keys(quizzData)">
+    {{ key }} : {{ quizzData[key] }}
+  </p>
+
 </template>
 
 <style scoped>
