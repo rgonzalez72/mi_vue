@@ -9,12 +9,14 @@ import allData from '../assets/towns.json'
 
 var keys = Object.keys (allData)
 
-var quizzData = {}
+var quizzData = { "correct": [], "keys": [], "shuffled": []}
 _.sample(keys, NO_OF_ROWS).forEach ((key, i) => {
     var resp = _.sample (allData[key])
-    console.log (key + " " + resp)
-    quizzData[key] = resp
+    quizzData.keys.push (key)
+    quizzData.correct.push (resp)
 })
+
+quizzData.shuffled = _.shuffle (quizzData.correct)
 
 
 defineExpose({
@@ -29,11 +31,10 @@ defineExpose({
       <col style="width:50%">
     </colgroup>
     <tbody>
-      <tr><td><button class="cell">Uno</button></td><td><button class="cell">111</button></td></tr>
-      <tr><td><button class="cell">Dos</button></td><td><button class="cell">222</button></td></tr>
-      <tr><td><button class="cell">Tres</button></td><td><button class="cell">333</button></td></tr>
-      <tr><td><button class="cell">Cuatro</button></td><td><button class="cell">444</button></td></tr>
-      <tr><td><button class="cell">Cinco</button></td><td><button class="cell">555</button></td></tr>
+      <tr v-for="(key, index) in  quizzData.keys">
+        <td><button class="cell">{{ key }}</button></td>
+        <td><button class="cell">{{ quizzData.shuffled[index] }}</button></td>
+      </tr>
     </tbody>
   </table>
   <button class="down" @click="count++">You clickedme {{ count }} times.</button>
@@ -49,7 +50,7 @@ table
 {
     border: 0px;
     table-layout: fixed;
-    width: 600px;
+    width: 1200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -58,7 +59,7 @@ table
 
 td {
     border: 0px;
-    width: 300px;
+    width: 600px;
     align: center;
 }
 

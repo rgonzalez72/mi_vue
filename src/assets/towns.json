@@ -59,5 +59,20 @@
         "Colindres", "Medio Cudeyo", "Reocín", "Santoña", "Camargo", "Los Corrales de Buelna",
         "Piélagos", "Santa Cruz de Bezana", "Suances", "Cartes", "Laredo", "Polanco",
         "Santa Maria de Cayón", "Torrelavega"
+    ], 
+    "Castellón": [
+        "Alcalá de Xiver", "L'Alcora", "Almassora", "Almenara", "Benicarló", "Benicasim", "Betxí", 
+        "Burriana", "Borriol", "Moncofa", "Nules", "Onda", "Oropesa del Mar", "Peñíscola", "Segorbe",
+        "Torreblanca", "La Vall d'Uixo", "Vila-real", "Vinaroz"
+    ],
+    "Valencia": [
+        "Alaquas", "Aldaia", "Algamesí", "Alzira", "Burjassot", "Catarroja", "Gandía", "Manises",
+        "Mislata", "Oliva", "Ontinyent", "Paiporta", "Paterna", "Quart de Poblet", "Sagunto", "Sueca",
+        "Torrent", "Xátiva", "Xirivella"
+    ],
+    "Alicante": [
+        "Alcoy", "Benidorm", "El Campello", "Crevillent", "Dénia", "Elche", "Elda", "Ibi", "Jávea", 
+        "Mutxamel", "Novelda", "Orihuela", "Petrer", "Santa Pola", "Sant Jona d'Alacant", 
+        "San Vicente del Raspeig", "Torrevieja", "Villajoyosa", "Villena"
     ]
 }
