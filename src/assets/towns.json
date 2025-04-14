@@ -74,5 +74,35 @@
         "Alcoy", "Benidorm", "El Campello", "Crevillent", "Dénia", "Elche", "Elda", "Ibi", "Jávea", 
         "Mutxamel", "Novelda", "Orihuela", "Petrer", "Santa Pola", "Sant Jona d'Alacant", 
         "San Vicente del Raspeig", "Torrevieja", "Villajoyosa", "Villena"
+    ],
+    "Vizcaya": [
+        "Amorebieta-Etxano", "Arrigorriaga", "Barakaldo", "Basauri", "Bermeo", "Bilbao", "Durango", "Erandio",
+        "Ermua", "Etxeberri", "Galdakao", "Genika-Lumo", "Getxo", "Leioa", "Mungia", "Portugalete",
+        "Santurzi", "Sestao", "Sopela", "Valle de Trápaga"
+    ], 
+    "Álava": [
+        "Salvatierra", "Alegría", "Amurrio", "Aramaio", "Artziniega", "Asparrena", "Ayala", "Llodio", 
+        "Legutio", "Okondo", "Laguardia", "Campezo", "Iruña de Oca", "Labastida", "Oyón", "Ribera Baja",
+        "Urkabustaiz", "Vitoria", "Zigoitia", "Zuia"
+    ],
+    "Guipuzcoa": [
+        "Andoain", "Mondragón", "Azkoitia", "Azpeitia", "Beasain", "Bergara", "San Sebastián", "Eibar",
+        "Elgoibar", "Rentería", "Hernani", "Hondarribia", "Irún", "Lasarte", "Oiartzun", "Oñati",
+        "Pasaia", "Tolosa", "Zarautz", "Zumarraga"
+    ], 
+    "Huesca": [
+        "Ainsa'Sobrarbe", "Benasque", "Fraga", "Sallent de Gállego", "Almudévar", "Biescas", "Grañén", "Jaca",
+        "Sariñena", "Altorricón", "Binaced", "Graus", "Monzón", "Tamarite de Litera", "Barbastro", "Binéfar",
+        "Gurrea de Gállego", "Sabiñanigo", "Zaidín"
+    ],
+    "Zaragoza": [
+        "Alagón", "La Almunia de Doña Godina", "Borja", "Cadrete", "Calatayud", "Caspe", "Cuarte de Huerva", 
+        "Ejea de los Caballeros", "Épila", "Fuentes de Ebro", "María de Huerva", "La Muela", "Pinseque", 
+        "La Puebla de Alfindén", "Tarazona", "Tauste", "Utebo", "Villanueva de Gállego", "Zuera"
+    ],
+    "Teruel": [
+        "Albalate del Arzobispo", "Andorra", "Cella", "Monreal del Campo", "Sarrión", "Albarracín", "Calaceite",
+        "Escucha", "Montalbán", "Alcañiz", "Calamocha", "Híjar", "Mora de Rubilos", "Utrillas", "Alcorisa",
+        "Calanda", "Mas de las Matas", "Santa Eulalia", "Valderrobres"
     ]
 }
