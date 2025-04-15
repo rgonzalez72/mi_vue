@@ -104,5 +104,46 @@
         "Albalate del Arzobispo", "Andorra", "Cella", "Monreal del Campo", "Sarrión", "Albarracín", "Calaceite",
         "Escucha", "Montalbán", "Alcañiz", "Calamocha", "Híjar", "Mora de Rubilos", "Utrillas", "Alcorisa",
         "Calanda", "Mas de las Matas", "Santa Eulalia", "Valderrobres"
+    ],
+    "A Coruña": [
+        "Ames", "Arteixo" , "Betanzos", "Boiro", "Cambre", "Carballo", "Culleredo", "Fene", "Ferrol", "A Laracha",
+        "Narón", "Noia", "Oleiros", "Ordes", "Rianxo", "Ribeira", "Sada", "Santiago de Compostela", "Teo"
+    ], 
+    "Ourense": [
+        "Allariz", "O Carballiño", "Maceda", "O Pereiro de Aguiar", "Toén", "Barbadás", "Cartelle", "Maside", 
+        "Rivadavia", "Verín", "O Barco de Valdeorras", "Celanova", "Monterrei", "A Rúa", "Viana do Bolo", 
+        "Boborás", "Coles", "San Cibrao das Viñas", "Xinzo de Limia"
+    ],
+    "Lugo": [
+        "Burela", "O Corgo", "Friol", "Monforte de Lemos", "Sarria", "Castro de Rei", "Cospeito", "Guitiriz", 
+        "Monterroso", "O Saviñao", "Cerbo", "A Fonsagrada", "Outeiro de Rei", "Vilalba", "Chantada", "Foz", 
+        "Mondoñedo", "Ribadeo", "Viveiro"
+    ],
+    "Pontevedra": [
+        "Bueu", "Gondomar", "Mos", "Tomiño", "Cambados", "Lalín", "Nigrán", "O Porriño", "Tui", "Cangas",
+        "Marín", "Poio", "Redondela", "Vigo", "A Estrada", "Moaña", "Ponteareas", "Sanxenxo", 
+        "Vilagarcía de Arousa"
+    ],
+    "Girona": [
+        "Banyoles", "Cassá de la Selva", "Figueres", "Palafrugell", "Salt", "La Bisbal d'Empordá", 
+        "Castelló d'Empuries", "Palamós", "Santa Coloma de Farners", "Blanes", "Castell-Platja d'Aro",
+        "Lloret de Mar", "Ripoll", "Sant Feliu de Guíxols", "Calonge", "L'Escala", "Olot", "Roses", 
+        "Torroella de Montgrí"
+    ],
+    "Lleida": [
+        "Agramunt", "Almenar", "Bellpuig", "Tárrega", "Alcarrás", "Alpicat", "Les Borges Blanques", 
+        "Mollerusa", "Torrefarrera", "Alcoletge", "Artesa de Segre", "Cervera", "La Seu d'Urgell", "Tremp",
+        "Almacelles", "Balaguer", "Guissona", "Solsona", "Vielha e Mijaran"
+    ],
+    "Barcelona": [
+        "Badalona", "Cornellá de Llobregat", "Manresa", "Rubí", "Sant Cugat del Vallés", "Gavá", "Mataró", 
+        "Sabadell", "Terrassa", "Castelldefels", "Granollers", "Mollet del Vallés", "Santa Coloma de Gramenet",
+        "Viladecans", "Cerdanyola del Vallés", "L'Hospitalet de Llobregat", "El Prat de Llobregrat",
+        "Sant Boi de Llobregrat", "Vilanova i la Geltrú"
+    ],
+    "Tarragona": [
+        "Alcanar", "Cambrils", "Mont-roig del Camp", "Salou", "Tortosa", "L'Ametlla de Mar", "Cunit", "Reus",
+        "Sant Carles de la Rápita", "Valls", "Amposta", "Deltebre", "Ruidoms", "El Vendrell", "Calafell",
+        "Montblanc", "Roquetes", "Torredembarra", "Vila-seca"
     ]
 }
