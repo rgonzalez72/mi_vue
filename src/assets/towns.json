@@ -145,5 +145,33 @@
         "Alcanar", "Cambrils", "Mont-roig del Camp", "Salou", "Tortosa", "L'Ametlla de Mar", "Cunit", "Reus",
         "Sant Carles de la Rápita", "Valls", "Amposta", "Deltebre", "Ruidoms", "El Vendrell", "Calafell",
         "Montblanc", "Roquetes", "Torredembarra", "Vila-seca"
+    ],
+    "Guadajara": [
+        "Alovera", "El Casar", "Mondéjar", "Uceda", "Azuqueca de Henares", "Chiloeches", "Horche", "Pioz",
+        "Villanueva de la Torre", "Brihuega", "Fontanar", "Marchamalo", "Sigüenza", "Yebes", 
+        "Cabanillas del Campo", "Galápagos", "Molina de Aragón", "Torrejón del Rey",
+        "Yunquera de Henares"
+    ],
+    "Cuenca": [
+        "La Alberca de Záncara", "Horcajo de Santiago", "Las Mesas", "Las Pedroñeras", "Sisante", "Belmonte",
+        "Huete", "Minglanilla", "El Provencio", "Tarancón", "Casasimarro", "Iniesta", "Mota del Cuervo",
+        "Quintanar del Rey", "Villamayor de Santiago", "Ledaña", "Motilla del Palancar", "San Clemente",
+        "Villanueva de la Jara"
+    ],
+    "Toledo": [
+        "Argés", "Fuensalida", "Ocaña", "Seseña", "Torrijos", "Bargas", "Illescas", "Olías del Rey",
+        "Sonseca", "Villacañas", "Consuegra", "Madridejos", "La Puebla de Montalbán", "Talavera de la Reina",
+        "Los Yébenes", "Corral de Almaguer", "Mora", "Quintanar del Orden", "Yuncos"
+    ],
+    "Ciudad Real": [
+        "Alcazar de San Juan", "Bolaños de Calatrava", "Herencia", "Miguelturra", "La Solana", "Almagro", 
+        "Campo de Criptana", "Malagón", "Pedro Muñoz", "Tomelloso", "Almodóvar del Campo", "Manzanares",
+        "Puertollano", "Valdepeñas", "Argamasilla de Alba", "Daimiel", "Membrilla", "Socuéllamos", 
+        "Villarubia de los Ojos"
+    ],
+    "Albacete": [
+        "Caudete", "La Gineta", "Ossa de Montiel", "Tobarra", "Almansa", "Chinchilla de Monte-Aragón",
+        "Hellín", "Pozo Cañada", "Villamalea", "El Bonillo", "Elche de la Sierra", "Madrigueras", "La Roda",
+        "Villarobledo", "Casas-Ibañez", "Fuente-Álamo", "Munera", "Tarazona de la Mancha", "Yeste"
     ]
 }
