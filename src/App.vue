@@ -4,6 +4,6 @@ import mainComponent from './components/mainComponent.vue'
 
 <template>
 <main>
-  <mainComponent />
+  <mainComponent/>
 </main>
 </template>

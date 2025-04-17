@@ -1,27 +1,28 @@
-<script setup>
-import { ref } from 'vue'
+<script>
+
 import _ from 'underscore';
-
-const NO_OF_ROWS = 5
-const count = ref(0)
-
 import allData from '../assets/towns.json'
 
-var keys = Object.keys (allData)
+const NO_OF_ROWS = 10
 
-var quizzData = { "correct": [], "keys": [], "shuffled": []}
-_.sample(keys, NO_OF_ROWS).forEach ((key, i) => {
-    var resp = _.sample (allData[key])
-    quizzData.keys.push (key)
-    quizzData.correct.push (resp)
-})
+export default {
 
-quizzData.shuffled = _.shuffle (quizzData.correct)
+    data() {
+        var keys = Object.keys (allData)
 
+        var quizzData = { "correct": [], "keys": [], "shuffled": []}
+        _.sample(keys, NO_OF_ROWS).forEach ((key, i) => {
+            var resp = _.sample (allData[key])
+            quizzData.keys.push (key)
+            quizzData.correct.push (resp)
+        })
 
-defineExpose({
-    quizzData
-})
+        quizzData.shuffled = _.shuffle (quizzData.correct)
+        return {
+            quizzData: quizzData
+        }
+    },
+}
 </script>
 
 <template>
@@ -37,11 +38,6 @@ defineExpose({
       </tr>
     </tbody>
   </table>
-  <button class="down" @click="count++">You clickedme {{ count }} times.</button>
-
-  <p v-for="(key) in Object.keys(quizzData)">
-    {{ key }} : {{ quizzData[key] }}
-  </p>
 
 </template>
 
