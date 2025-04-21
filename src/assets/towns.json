@@ -205,7 +205,7 @@
     "Jaén": [
         "Alcalá la Real", "Bailén", "Jódar", "Martos", "Torreperogil", "Alcaudete", "La Carolina", "Linares", 
         "Úbeda", "Andújar", "Cazorla", "Mancha Real", "Torredelcampo", "Villacarrillo", "Baeza", "Marmolejo",
-        "Torredonjimeno", "Villanueva del Arzobispo"
+        "Torredonjimeno", "Villanueva del Arzobispo", "Mengíbar"
     ],
     "Granada": [
         "Albolote", "Baza", "Guadix", "Motril", "Salobreña", "Almuñecar", "Churriana de la Vega", "Huétor Vega",
@@ -233,6 +233,42 @@
         "Villamayor", "Aldeatejada", "Castellanos de Moriscos", "Guijuelo", "Villares de la Reina", "Béjar",
         "Ciudad Rodrigo", "Ledesma", "Santa Maria de Tormes", "Villoria", "Cabrerizos", "Doñinos de Salamanca",
         "Lumbrales", "Terradillos", "Vitigudino"
+    ],
+    "Palencia": [
+        "Aguilar de Campoo", "Cervera de Pisuerga", "Herrera de Pisuerga", "Saldaña", "Venta de Baños",
+        "Baltanás", "Dueñas", "Osorno la Mayor", "Santibañez de la Peña", "Villada", "Barruelo de Santullán",
+        "Grijota", "Torquemada", "Villalobón", "Carrión de los Condes", "Guardo", "Paredes de Nava",
+        "Velilla del Río Carrión", "Villamuriel de Cerrato"
+    ],
+    "Valladolid": [
+        "Aldeamayor de San Martín", "Cigales", "Medina del Campo", "Peñafiel", "Tordesillas", "Arroyo de la Encomienda",
+        "Cistérniga", "Medina de Rioseco", "Renedo de Esgueva", "Tudela de Duero", "Boecillo", "Íscar",
+        "Olmedo", "Santovenia de Pisuerga", "Cabezón de Pisuerga", "Laguna de Duero", "Pedrajas de San Esteban",
+        "Simancas", "Zaratán"
+    ],
+    "Burgos": [
+        "Alfoz de Quintanadueñas", "Briviesca", "Lerma", "Miranda de Ebro", "Valle de Mena", "Aranda de Duero", 
+        "Medina de Pomar", "Quintanar de la Sierra", "Villadiego", "Arcos", "Espinosa de los Monteros", 
+        "Melgar de Fernamental", "Roa", "Villagonzalo Pedernales", "Belorado", "Ibeas de Juarros", 
+        "Merindad de Río Ubierna", "Salas de los Infantes", 
+        "Villarcayo de Merindad de Castilla la Vieja"
+    ],
+    "Ávila": [
+        "La Adrada", "Candeleda", "Madrigal de la Altas Torres", "Piedrahita", "El Arenal", "El Barco de Ávila",
+        "Casavieja", "Mombeltrán", "Piedralaves", "Arenas de San Pedro", "El Barraco", "Cebreros",
+        "Navaluenga", "Sotillo de la Adrada", "Arévalo", "Burgohondo", "El Hoyo de Pinares", "Las Navas del Marqués",
+        "El Tiemblo"
+    ],
+    "Segovia": [
+        "Ayllón", "Coca", "Hontanares de Eresma", "Palazuelos de Eresma", "Cantalejo", "Cuéllar", "La Lastrilla",
+        "Real Sitio de San Ildefonso", "Sepúlveda", "Cantimpalos", "El Espinar", "Nava de la Asunción",
+        "Riaza", "Torrecaballeros", "Carbonero el Mayor", "Espirdo", "Navas de Oro", "San Cristóbal de Segovia", 
+        "Villacastín"
+    ],
+    "Soria": [
+        "Ágreda", "Berlanga de Duero", "Garray", "Navaleno", "San Leonardo de Yagüe", "Almarza", 
+        "Burgo de Osma-Ciudad de Osma", "Golmayo", "Ólvega", "San Pedro Manrique", "Almazán", "Covaleda", 
+        "Langa de Duero", "Quintana Redonda", "Arcos de Jalón", "Duruelo de la Sierra", "Medinaceli", 
+        "San Esteban de Gormaz", "Vinuesa"
     ]
-
 }
