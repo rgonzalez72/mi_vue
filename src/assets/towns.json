@@ -173,5 +173,66 @@
         "Caudete", "La Gineta", "Ossa de Montiel", "Tobarra", "Almansa", "Chinchilla de Monte-Aragón",
         "Hellín", "Pozo Cañada", "Villamalea", "El Bonillo", "Elche de la Sierra", "Madrigueras", "La Roda",
         "Villarobledo", "Casas-Ibañez", "Fuente-Álamo", "Munera", "Tarazona de la Mancha", "Yeste"
+    ],
+    "Huelva": [
+        "Aljaraque", "Bollullos Par del Condado", "Nerva", "Rociana del Condado", "Almonte", "Bonares",
+        "Isla Cristina", "La Palma del Condado", "San Juan del Puerto", "Aracena", "Cartaya", "Lepe",
+        "Palos de la Frontera", "Trigueros", "Ayamonte", "Gibraleón", "Moguer", "Punta Umbría",
+        "Valverde del Camino"
+    ],
+    "Sevilla": [
+        "Alcalá de Guadaíra", "Carmona", "Lebrija", "Morón de la Frontera", "Arahal", "Coria del Río", 
+        "Mairena del Alcor", "Los Palacios y Villafranca", "Tomares", "Bormujos", "Dos Hermanas", 
+        "Mairena del Aljarafe", "La Rinconada", "Utrera", "Camas", "Écija", "Marchena", 
+        "San Juan de Aznalfarache", "El Viso del Alcor"
+    ],
+    "Cádiz": [
+        "Algeciras", "Jerez de la Frontera", "Rota", "Tarifa", "Arcos de la Frontera", "Chiclana de la Frontera",
+        "La Linea de la Concepción", "San Fernando", "Ubrique", "Barbate", "Chipiona", "El Puerto de Santa María",
+        "Sanlúcar de Barrameda", "Vejer de la Frontera", "Los Barrios", "Conil de la Frontera", "Puerto Real",
+        "San Roque", "Villamartín"
+    ],
+    "Málaga": [
+        "Alhaurín de la Torre", "Benalmádena", "Fuengirola", "Mijas", "Ronda", "Alhaurín el Grande",
+        "Cártama", "Nerja", "Torremolinos", "Álora", "Coín", "Manilva", "Pizarra", "Torrox", "Antequera",
+        "Estepona", "Marbella", "Rincon de la Victoria", "Vélez-Málaga"
+    ],
+    "Córdoba": [
+        "Aguilar de la Frontera", "Cabra", "Fernán-Núñez", "Montoro", "Priego de Córdoba", "Almodóvar del Río",
+        "La Carlota", "Fuente Palmera", "Palma del Río", "Puente Genil", "Baena", "Castro del Río", "Lucena", 
+        "Peñarroya-Pueblonuevo", "Rute", "Bujalance", "Montilla", "Pozoblanco", "Villanueva de Córdoba"
+    ],
+    "Jaén": [
+        "Alcalá la Real", "Bailén", "Jódar", "Martos", "Torreperogil", "Alcaudete", "La Carolina", "Linares", 
+        "Úbeda", "Andújar", "Cazorla", "Mancha Real", "Torredelcampo", "Villacarrillo", "Baeza", "Marmolejo",
+        "Torredonjimeno", "Villanueva del Arzobispo"
+    ],
+    "Granada": [
+        "Albolote", "Baza", "Guadix", "Motril", "Salobreña", "Almuñecar", "Churriana de la Vega", "Huétor Vega",
+        "Ogíjares", "Santa Fe", "Armilla", "Las Gabias", "Loja", "Peligros", "Vegas del Genil", "Atarfe",
+        "Maracena", "Pinos Puente", "La Zubia"
+    ],
+    "Almería": [
+        "Adra", "Carboneras", "Huércal de Almería", "Níjar", "Vélez-Rubio", "Albox", "Cuevas de Almanzora",
+        "Huércal-Overa", "Olula del Río", "Vera", "El Ejido", "Mojácar", "Pulpí", "Viator", "Berja",
+        "Garrucha", "La Mojonera", "Roquetas de Mar", "Vícar"
+    ],
+    "León": [
+        "Astorga", "Camponaraya", "San Andrés del Rabanedo", "Valverde la Virgén", "La Bañeza", "Carracedelo",
+        "La Pola de Gordón", "Sariegos", "Villablino", "Bembibre", "Cistierna", "Ponferrada", "Toreno", 
+        "Villafranca del Bierzo", "Cacabelos", "Fabero", "La Robla", "Valencia de Don Juan", "Villaquilambre"
+    ],
+    "Zamora": [
+        "Alcañices", "Corrales del Vino", "Monfarracinos", "Puebla de Sanabria", "Toro", "Benavente",
+        "Fermoselle", "Moraleja del Vino", "San Cristóbal de Entreviñas", "Villalpando", "Bermillo de Sayago",
+        "Fuentesaúco", "Morales del Vino", "Santa Cristina de la Polvorosa", "Villaralbo", "Coreses",
+        "Galende", "Morales de Todo", "Santibañez de Vidriales"
+    ],
+    "Salamanca": [
+        "Alba de Tormes", "Carbajos de la Sagrada", "La Fuente de San Esteban", "Peñaranda de Bracamonte", 
+        "Villamayor", "Aldeatejada", "Castellanos de Moriscos", "Guijuelo", "Villares de la Reina", "Béjar",
+        "Ciudad Rodrigo", "Ledesma", "Santa Maria de Tormes", "Villoria", "Cabrerizos", "Doñinos de Salamanca",
+        "Lumbrales", "Terradillos", "Vitigudino"
     ]
+
 }
