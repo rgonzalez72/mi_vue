@@ -3,7 +3,7 @@
 import _ from 'underscore';
 import allData from '../assets/towns.json'
 
-const NO_OF_ROWS = 10
+const NO_OF_ROWS = 5
 
 export default {
 
@@ -37,6 +37,7 @@ export default {
         quizzData.shuffled = _.shuffle (quizzData.correct)
         var pallette = _.shuffle (PALETTE)
 
+        var allSelected = false
 
         return {
             quizzData: quizzData, 
@@ -49,6 +50,7 @@ export default {
             BORDER_SELECT: BORDER_SELECT,
             BORDER_NOT_SELECT: BORDER_NOT_SELECT,
             COLOR_NOT_SELECT: COLOR_NOT_SELECT,
+            allSelected: allSelected
         }
     },
     methods: {
@@ -65,16 +67,48 @@ export default {
                 this.colorLeft[index] = this.pallette[index]
                 this.borderLeft[index] = this.BORDER_SELECT
                 this.selected = index
+
+                if (this.selection[index] !== undefined) {
+                    var reverse = this.selection [index]
+                    this.colorRight[reverse] = this.COLOR_NOT_SELECT
+                    this.selection[index] = undefined
+                    this.reverseSelection[reverse] = undefined
+                }
             }
 
         },
         onClickRight (index) {
-            console.log ("Clicked right")
-            console.log (JSON.stringify(index))
-            console.log (this.selection)
-            console.log (this.selected)
-            console.log (this.reverseSelection)
-            console.log (this.colorLeft)
+
+            if (this.selected !== undefined) {
+                if (this.reverseSelection[index] !== undefined) {
+                    var direct  = this.reverseSelection [index]
+                    this.colorLeft[direct] = this.COLOR_NOT_SELECT
+                    this.selection[direct] = undefined
+                }
+                this.reverseSelection[index] = this.selected
+                this.selection[this.selected] = index
+                this.colorRight[index] = this.pallette [this.selected]
+                this.borderLeft[this.selected] = this.BORDER_NOT_SELECT
+                this.selected = undefined
+            } else {
+                if (this.reverseSelection[index] !== undefined) {
+                    var direct  = this.reverseSelection [index]
+                    this.colorLeft[direct] = this.COLOR_NOT_SELECT
+                    this.selection[direct] = undefined
+                    this.reverseSelection[index] = undefined
+                    this.colorRight[index] = this.COLOR_NOT_SELECT
+                    this.colorLeft[index] = this.COLOR_NOT_SELECT
+                }
+            }
+
+            var allSelect = true
+            for (var i in this.selection) {
+                if (this.selection [i] === undefined) {
+                    allSelect  = false
+                    break
+                }
+            }
+            this.allSelected = allSelect
         },
     },
 }
@@ -101,6 +135,9 @@ export default {
       </tr>
     </tbody>
   </table>
+  <div class="bottom_button">
+    <button class="check_button" :disabled="! allSelected">Comprobar </button>
+  </div>
 
 </template>
 
@@ -131,6 +168,17 @@ button.down {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+div.bottom_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button.check_button {
+    font-size: 20px;
 }
 
 </style>
