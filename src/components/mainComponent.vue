@@ -3,7 +3,7 @@
 import _ from 'underscore';
 import allData from '../assets/towns.json'
 
-const NO_OF_ROWS = 5
+const NO_OF_ROWS = 10
 
 export default {
 
@@ -21,6 +21,7 @@ export default {
         var colorLeft = []
         var colorRight = []
         var borderLeft = []
+        var solveMsg = ""
         var quizzData = { "correct": [], "keys": [], "shuffled": []}
         _.sample(keys, NO_OF_ROWS).forEach ((key, i) => {
             var resp = _.sample (allData[key])
@@ -50,7 +51,8 @@ export default {
             BORDER_SELECT: BORDER_SELECT,
             BORDER_NOT_SELECT: BORDER_NOT_SELECT,
             COLOR_NOT_SELECT: COLOR_NOT_SELECT,
-            allSelected: allSelected
+            allSelected: allSelected,
+            solveMsg: solveMsg,
         }
     },
     methods: {
@@ -110,6 +112,24 @@ export default {
             }
             this.allSelected = allSelect
         },
+        onClickSolve () {
+            var errMsg = "Errores: "
+            var noOfErrors = 0
+            for (var i in this.selection) {
+                var rightIndex = this.selection[i]
+                var guessName = this.quizzData.shuffled[rightIndex]
+                var correctName = this.quizzData.correct[i]
+                if (guessName != correctName) {
+                    noOfErrors += 1
+                    errMsg += this.quizzData.keys[i] + " -> " + correctName + "  "
+                } 
+            }
+            if (noOfErrors == 0) {
+                errMsg = "Todas correctas."
+            }
+
+            this.solveMsg = errMsg
+        }
     },
 }
 </script>
@@ -136,8 +156,9 @@ export default {
     </tbody>
   </table>
   <div class="bottom_button">
-    <button class="check_button" :disabled="! allSelected">Comprobar </button>
+    <button class="check_button" :disabled="! allSelected" @click="onClickSolve">Comprobar </button>
   </div>
+  <p>{{ solveMsg }}</p>
 
 </template>
 
