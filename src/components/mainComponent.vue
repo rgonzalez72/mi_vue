@@ -8,14 +8,11 @@ const NO_OF_ROWS = 10
 export default {
 
     data() {
-        const PALETTE = ["#9e0142", "#d53e4f", "#f46d43", "#fdae61", "#fee08b", "#e6f598", "#abdda4",
-              "#66c2a5", "#3288bd", "#5e4fa2"]
         const BORDER_NOT_SELECT = "1px solid black"
         const BORDER_SELECT = "2px solid black"
         const COLOR_NOT_SELECT = "#eeeeee"
-        var keys = Object.keys (allData)
 
-        var selected = undefined; // Current selected on the left
+        var selected = undefined // Current selected on the left
         var selection = []
         var reverseSelection = []
         var colorLeft = []
@@ -23,22 +20,12 @@ export default {
         var borderLeft = []
         var solveMsg = ""
         var quizzData = { "correct": [], "keys": [], "shuffled": []}
-        _.sample(keys, NO_OF_ROWS).forEach ((key, i) => {
-            var resp = _.sample (allData[key])
-            quizzData.keys.push (key)
-            quizzData.correct.push (resp)
-            selection.push (undefined)
-            reverseSelection.push (undefined)
-            colorLeft.push (COLOR_NOT_SELECT)
-            colorRight.push (COLOR_NOT_SELECT)
-            borderLeft.push (BORDER_NOT_SELECT)
-
-        })
-
-        quizzData.shuffled = _.shuffle (quizzData.correct)
-        var pallette = _.shuffle (PALETTE)
+        var pallette = []
 
         var allSelected = false
+        var solved = false
+        var buttonText = "Comprobar"
+
 
         return {
             quizzData: quizzData, 
@@ -53,9 +40,44 @@ export default {
             COLOR_NOT_SELECT: COLOR_NOT_SELECT,
             allSelected: allSelected,
             solveMsg: solveMsg,
+            solved: solved,
+            buttonText: buttonText,
         }
     },
     methods: {
+        myInit () {
+            const PALETTE = ["#9e0142", "#d53e4f", "#f46d43", "#fdae61", "#fee08b", "#e6f598", "#abdda4",
+                "#66c2a5", "#3288bd", "#5e4fa2"]
+            var keys = Object.keys (allData)
+
+            this.selected = undefined; // Current selected on the left
+            this.selection = []
+            this.reverseSelection = []
+            this.colorLeft = []
+            this.colorRight = []
+            this.borderLeft = []
+            this.solveMsg = ""
+            this.quizzData = { "correct": [], "keys": [], "shuffled": []}
+            _.sample(keys, NO_OF_ROWS).forEach ((key, i) => {
+                var resp = _.sample (allData[key])
+                this.quizzData.keys.push (key)
+                this.quizzData.correct.push (resp)
+                this.selection.push (undefined)
+                this.reverseSelection.push (undefined)
+                this.colorLeft.push (this.COLOR_NOT_SELECT)
+                this.colorRight.push (this.COLOR_NOT_SELECT)
+                this.borderLeft.push (this.BORDER_NOT_SELECT)
+
+            })
+
+            this.quizzData.shuffled = _.shuffle (this.quizzData.correct)
+            //this.pallette = _.shuffle (PALETTE)
+            this.pallette = PALETTE
+
+            this.allSelected = false
+            this.solved = false
+            this.buttonText = "Comprobar"
+        },
         onClickLeft (index) {
 
             if (this.selected == index) {
@@ -113,23 +135,32 @@ export default {
             this.allSelected = allSelect
         },
         onClickSolve () {
-            var errMsg = "Errores: "
-            var noOfErrors = 0
-            for (var i in this.selection) {
-                var rightIndex = this.selection[i]
-                var guessName = this.quizzData.shuffled[rightIndex]
-                var correctName = this.quizzData.correct[i]
-                if (guessName != correctName) {
-                    noOfErrors += 1
-                    errMsg += this.quizzData.keys[i] + " -> " + correctName + "  "
-                } 
-            }
-            if (noOfErrors == 0) {
-                errMsg = "Todas correctas."
-            }
+            if (! this.solved) {
+                var errMsg = "Errores: "
+                    var noOfErrors = 0
+                    for (var i in this.selection) {
+                        var rightIndex = this.selection[i]
+                            var guessName = this.quizzData.shuffled[rightIndex]
+                            var correctName = this.quizzData.correct[i]
+                            if (guessName != correctName) {
+                                noOfErrors += 1
+                                    errMsg += this.quizzData.keys[i] + " -> " + correctName + "  "
+                            } 
+                    }
+                if (noOfErrors == 0) {
+                    errMsg = "Todas correctas."
+                }
 
-            this.solveMsg = errMsg
+                this.solveMsg = errMsg
+                this.solved = true
+                this.buttonText = "Reiniciar"
+            } else {
+                this.myInit ()
+            }
         }
+    },
+    mounted() {
+        this.myInit()
     },
 }
 </script>
@@ -156,7 +187,7 @@ export default {
     </tbody>
   </table>
   <div class="bottom_button">
-    <button class="check_button" :disabled="! allSelected" @click="onClickSolve">Comprobar </button>
+    <button class="check_button" :disabled="! allSelected" @click="onClickSolve">{{ buttonText }}</button>
   </div>
   <p>{{ solveMsg }}</p>
 
