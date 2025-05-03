@@ -198,7 +198,7 @@ table
 {
     border: 0px;
     table-layout: fixed;
-    width: 1200px;
+    width: 400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -207,13 +207,13 @@ table
 
 td {
     border: 0px;
-    width: 600px;
+    width: 200px;
     align: center;
 }
 
 button.cell {
     width: 100%;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 button.down {
@@ -226,11 +226,11 @@ div.bottom_button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 button.check_button {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 </style>
