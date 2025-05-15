@@ -1,29 +1,14 @@
 # mi_vue
 
-This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```
+docker run -itd --name mi_vue -v /home/rgonzalez/provis/vue/app:/app -p 5173:5173 -u $(id -u):$(id -g)  node:23-alpine
+```
+                                                                                                             
+```
+docker stop mi_vue && docker rm mi_vue
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
 ```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
+docker exec -it --user node mi_vue /bin/sh
 ```
